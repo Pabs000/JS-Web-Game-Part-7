@@ -57,3 +57,12 @@ function newNonPlayableCharacter(x, y) {
         stop: stop
     }
 }
+function sleep(time){
+    return new Promise(resolve => {
+        setTimeout(resolve, time)
+    })  
+}
+async function test(){
+    await sleep(5000)
+    console.log('Hello World')
+}
